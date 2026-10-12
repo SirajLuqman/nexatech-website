@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Defines the character encoding for correct text display -->
+    <meta charset="UTF-8" />
+
+    <!-- Makes the website responsive on mobile, tablet, and desktop devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Provides a short description of the Contact page for search engines -->
+    <meta
+      name="description"
+      content="Contact NexaTech to discuss a digital project or business challenge."
+    />
+
+    <!-- Sets the title displayed in the browser tab -->
+    <title>Contact | NexaTech</title>
+
+    <!-- Improves connection setup when loading Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Imports the Roboto font in different weights and styles -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Links the external CSS file for website styling -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER AND NAVIGATION ==================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Website logo; clicking it opens the homepage -->
+        <a class="logo" href="index.html" aria-label="NexaTech home">
+          NexaTech
+        </a>
+
+        <!-- Checkbox controls the mobile navigation menu through CSS -->
+        <input
+          class="nav-toggle"
+          type="checkbox"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+        />
+
+        <!-- Clicking the label toggles the checkbox to open or close the menu -->
+        <label
+          class="burger"
+          for="nav-toggle"
+          aria-label="Open or close navigation menu"
+        >
+          <!-- Three lines that create the hamburger menu icon -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Navigation links shared across the website's pages -->
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+
+          <!-- Indicates that Contact is the current page -->
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================== MAIN PAGE CONTENT ==================== -->
+    <main>
+      <!-- ==================== CONTACT HERO SECTION ==================== -->
+      <section class="page-hero section-dark">
+        <div class="container">
+          <!-- Small introductory label -->
+          <p class="eyebrow">Get in touch</p>
+
+          <!-- Main heading encouraging visitors to contact the company -->
+          <h1>Let's talk about your next step.</h1>
+
+          <!-- Introduction explaining the purpose and limitation of the form -->
+          <p class="page-intro">
+            Tell us a little about what you want to improve. This demo form is
+            for front-end presentation only and does not send messages.
+          </p>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT CONTENT SECTION ==================== -->
+      <section class="page-content section-light">
+        <div class="container contact-layout">
+          <!-- Contact information displayed beside the form -->
+          <div class="contact-copy">
+            <h2>Start a conversation</h2>
+
+            <p>
+              Whether you need a website, a better workflow, or help exploring
+              digital options, we're happy to hear about your idea.
+            </p>
+
+            <!-- Strong highlights the label within the paragraph -->
+            <p><strong>Email:</strong> hello@nexatech.example</p>
+
+            <p><strong>Availability:</strong> Monday–Friday, 9:00–17:00</p>
+          </div>
+
+          <!-- ==================== CONTACT FORM ==================== -->
+          <!-- Collects sample visitor details; it does not deliver messages -->
+          <form class="contact-form" action="#" method="get">
+            <!-- Name field label; for connects it to input id="name" -->
+            <label for="name">Your name</label>
+
+            <!-- Text input for the visitor's name -->
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+
+            <!-- Email field label connected to the email input -->
+            <label for="email">Email address</label>
+
+            <!-- Email input with built-in email-format validation -->
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <!-- Label for the service selection menu -->
+            <label for="topic">What can we help with?</label>
+
+            <!-- Dropdown menu allowing visitors to select a service -->
+            <select id="topic" name="topic">
+              <option>Web development</option>
+              <option>Workflow automation</option>
+              <option>Data solutions</option>
+              <option>Technology consulting</option>
+              <option>Something else</option>
+            </select>
+
+            <!-- Label connected to the message text area -->
+            <label for="message">Your message</label>
+
+            <!-- Multi-line text field for the visitor's message -->
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your idea"
+            ></textarea>
+
+            <!-- Submit button for the form -->
+            <button class="button button-primary" type="submit">
+              Submit enquiry
+            </button>
+
+            <!-- Clarifies that the demonstration form does not deliver messages -->
+            <p class="form-note">Demo only: no message will be delivered.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <!-- Copyright notice at the bottom of the page -->
+        <p>Copyright &copy; 2026 NexaTech</p>
+      </div>
+    </footer>
+  </body>
+</html>
