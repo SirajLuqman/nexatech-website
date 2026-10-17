@@ -1,45 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Defines the character encoding so text and symbols display correctly -->
     <meta charset="UTF-8" />
-
-    <!-- Makes the website responsive to the screen width of mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Provides a short description of this page for search engines -->
     <meta
       name="description"
       content="Explore NexaTech web development, workflow automation, data solutions, and technology consulting."
     />
-
-    <!-- Sets the title displayed in the browser tab -->
     <title>Services | NexaTech</title>
 
-    <!-- Connects to Google Fonts more efficiently -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Imports the Roboto font in different weights and styles -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Links the external CSS file that controls the website's appearance -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <!-- ==================== HEADER AND NAVIGATION ==================== -->
     <header class="site-header">
       <div class="container header-inner">
-        <!-- Website logo; clicking it returns the visitor to the homepage -->
         <a class="logo" href="index.html" aria-label="NexaTech home">
           NexaTech
         </a>
 
-        <!-- Checkbox used to control the mobile navigation menu with CSS -->
         <input
           class="nav-toggle"
           type="checkbox"
@@ -47,44 +32,29 @@
           aria-label="Toggle navigation"
         />
 
-        <!-- Clicking this label toggles the checkbox and opens/closes the menu -->
         <label
           class="burger"
           for="nav-toggle"
           aria-label="Open or close navigation menu"
         >
-          <!-- Three lines that visually form the hamburger menu icon -->
           <span></span>
           <span></span>
           <span></span>
         </label>
 
-        <!-- Navigation links shared across the website's pages -->
         <nav class="site-nav" aria-label="Main navigation">
-          <!-- aria-current indicates that Services is the current page -->
           <a href="services.html" aria-current="page">Services</a>
-
-          <!-- Links to the About page -->
           <a href="about.html">About</a>
-
-          <!-- Links to the Contact page -->
           <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
-    <!-- ==================== MAIN PAGE CONTENT ==================== -->
     <main>
-      <!-- ==================== SERVICES HERO SECTION ==================== -->
       <section class="page-hero section-dark">
         <div class="container">
-          <!-- Small introductory label above the main heading -->
           <p class="eyebrow">What we do</p>
-
-          <!-- Main heading describing the services offered -->
           <h1>Digital services built around your goals.</h1>
-
-          <!-- Brief introduction to the company's services -->
           <p class="page-intro">
             We help make technology more useful, manageable, and accessible for
             growing businesses.
@@ -92,67 +62,51 @@
         </div>
       </section>
 
-      <!-- ==================== SERVICES DETAILS SECTION ==================== -->
       <section class="page-content section-light">
         <div class="container">
-          <!-- Groups the individual service cards together -->
           <div class="service-list">
-            <!-- Service 1: Web Development -->
             <article class="service-detail">
-              <!-- Decorative icon; hidden from screen readers -->
               <div class="solution-icon" aria-hidden="true">
                 <span>&lt;/&gt;</span>
               </div>
 
-              <!-- Service title -->
               <h2>Web Development</h2>
-
-              <!-- Description of the web development service -->
               <p>
                 Responsive websites and front-end experiences that make it easy
                 for customers to understand your offer and take action.
               </p>
             </article>
 
-            <!-- Service 2: Workflow Automation -->
             <article class="service-detail">
-              <!-- Decorative workflow icon -->
               <div class="solution-icon" aria-hidden="true">
                 <span>↻</span>
               </div>
 
               <h2>Workflow Automation</h2>
-
               <p>
                 Thoughtful digital workflows that reduce repetitive steps and
                 make everyday processes easier to manage.
               </p>
             </article>
 
-            <!-- Service 3: Data Solutions -->
             <article class="service-detail">
-              <!-- Decorative data icon -->
               <div class="solution-icon" aria-hidden="true">
                 <span>▥</span>
               </div>
 
               <h2>Data Solutions</h2>
-
               <p>
                 Dashboards and reporting concepts that organize information and
                 help teams see patterns more clearly.
               </p>
             </article>
 
-            <!-- Service 4: Technology Consulting -->
             <article class="service-detail">
-              <!-- Decorative consulting icon -->
               <div class="solution-icon" aria-hidden="true">
                 <span>◇</span>
               </div>
 
               <h2>Technology Consulting</h2>
-
               <p>
                 Practical guidance to help you compare options, plan
                 improvements, and choose tools that match your needs.
@@ -160,13 +114,8 @@
             </article>
           </div>
 
-          <!-- ==================== CALL-TO-ACTION SECTION ==================== -->
-          <!-- Encourages visitors to contact the company about a project -->
           <div class="inline-cta">
-            <!-- Call-to-action heading -->
             <h2>Have a project in mind?</h2>
-
-            <!-- Button-style link that takes visitors to the Contact page -->
             <a class="button button-primary" href="contact.html">
               Talk to our team
             </a>
@@ -175,10 +124,8 @@
       </section>
     </main>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer class="site-footer">
       <div class="container">
-        <!-- Copyright notice displayed at the bottom of the page -->
         <p>Copyright &copy; 2026 NexaTech</p>
       </div>
     </footer>

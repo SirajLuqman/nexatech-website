@@ -4,30 +4,31 @@ A four-page responsive website built with semantic HTML and vanilla CSS.
 
 ## Pages
 
-- `index.html` — landing page
-- `services.html` — services
-- `about.html` — about NexaTech
-- `contact.html` — contact page with a front-end demo form
+- `index.html` — Landing page
+- `services.html` — Services offered by NexaTech
+- `about.html` — About NexaTech
+- `contact.html` — Contact page with a front-end demonstration form
 
-## Run locally
+## Run Locally
 
-1. Open this folder in Visual Studio Code.
-2. Install the **Live Server** extension if needed.
+1. Open the project folder in Visual Studio Code.
+2. Install the **Live Server** extension if it is not already installed.
 3. Right-click `index.html` and select **Open with Live Server**.
 
-## Assignment constraints
+## Assignment Constraints
 
 - No JavaScript.
-- No CSS Grid.
-- Layouts use Flexbox.
+- No CSS Grid; layouts use Flexbox.
 - Roboto is imported from Google Fonts.
-- Mobile navigation uses a checkbox and CSS selectors only.
-- One external stylesheet is shared by all pages.
+- Mobile navigation uses a checkbox and CSS selectors.
+- All four pages share one external stylesheet: `css/style.css`.
 
-## Responsive image note
+## Responsive Image
 
-The landing page hero uses `srcset` and `sizes` so the browser can choose an image resource suitable for the rendered slot. CSS makes it fit its container with `object-fit: cover`. The current image URLs need an internet connection; replace them with local assets if required by your course.
+The landing page hero uses `srcset` and `sizes` to let the browser select an appropriate image resource based on the rendered image size and viewport. CSS uses `object-fit: cover` to fit the image within its container.
 
-## Contact form limitation
+The current image URLs require an internet connection. If the assignment requires offline access or local assets, replace the external URLs with images stored in the project folder.
 
-The contact form is a visual demonstration only. No server or JavaScript is configured to deliver messages.
+## Contact Form Limitation
+
+The contact form is a front-end demonstration only. It is not connected to a backend service, so submitting the form will not deliver messages to NexaTech.

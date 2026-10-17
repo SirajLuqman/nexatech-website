@@ -1,50 +1,29 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Defines the character encoding so text and symbols display correctly. -->
     <meta charset="UTF-8" />
-
-    <!-- Makes the website adapt to the width of mobile devices and other screens. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Provides a short description of the website for search engines. -->
     <meta
       name="description"
       content="NexaTech helps businesses grow with practical digital solutions, web development, and automation."
     />
-
-    <!-- Sets the title displayed in the browser tab. -->
     <title>NexaTech | Digital Solutions</title>
-
-    <!-- Establishes an early connection to Google Fonts to improve font loading. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Imports the Roboto font in the weights and styles used by the website. -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Connects this HTML page to the shared external CSS stylesheet. -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <!-- ==================== HEADER AND NAVIGATION ==================== -->
-    <!-- Contains the company logo and links to the other website pages. -->
     <header class="site-header">
       <div class="container header-inner">
-        <!-- The logo links back to the home page. -->
         <a class="logo" href="index.html" aria-label="NexaTech home">
           NexaTech
         </a>
 
-        <!--
-        This checkbox controls the mobile navigation menu.
-        CSS checks whether it is selected to show or hide the menu.
-        It allows the menu to work without JavaScript.
-      -->
         <input
           class="nav-toggle"
           type="checkbox"
@@ -52,11 +31,6 @@
           aria-label="Toggle navigation"
         />
 
-        <!--
-        The label is connected to the checkbox through its ID.
-        Clicking the three-line burger icon toggles the checkbox.
-        CSS styles the spans to create the burger icon.
-      -->
         <label
           class="burger"
           for="nav-toggle"
@@ -67,7 +41,6 @@
           <span></span>
         </label>
 
-        <!-- Main navigation links to the other HTML pages. -->
         <nav class="site-nav" aria-label="Main navigation">
           <a href="services.html">Services</a>
           <a href="about.html">About</a>
@@ -76,18 +49,9 @@
       </div>
     </header>
 
-    <!-- ==================== MAIN PAGE CONTENT ==================== -->
-    <!-- The main element contains the primary content of the home page. -->
     <main>
-      <!-- ==================== HERO SECTION ==================== -->
-      <!--
-      Introduces NexaTech with a main heading, description,
-      call-to-action button, and workspace image.
-      section-dark applies the dark background styling.
-    -->
       <section class="hero section-dark">
         <div class="container hero-inner">
-          <!-- Text content displayed in the hero section. -->
           <div class="hero-copy">
             <h1>Build smarter.<br />Grow faster.</h1>
 
@@ -96,20 +60,12 @@
               better, connect with customers, and move forward with confidence.
             </p>
 
-            <!-- Takes visitors to the Contact page to start an enquiry. -->
             <a class="button button-primary" href="contact.html">
               Get Started
             </a>
           </div>
 
-          <!-- Image displayed alongside the hero text. -->
           <div class="hero-visual">
-            <!--
-            src provides the default image.
-            srcset offers image versions at different widths.
-            sizes helps the browser choose an appropriate image size.
-            alt describes the image for visitors who cannot see it.
-          -->
             <img
               src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
               srcset="
@@ -123,22 +79,12 @@
         </div>
       </section>
 
-      <!-- ==================== DIGITAL SOLUTIONS SECTION ==================== -->
-      <!-- Presents the main services using four individual information cards. -->
       <section class="solutions section-light">
         <div class="container">
-          <!-- Section heading introduces the services displayed below. -->
           <h2 class="section-title">Explore our digital solutions</h2>
 
-          <!--
-          Groups the service cards together.
-          CSS Flexbox controls their layout and allows them to wrap
-          when the available screen width becomes smaller.
-        -->
           <div class="solution-list">
-            <!-- Card 1: Website development service. -->
-            <article class="solution-card">
-              <!-- aria-hidden prevents the decorative symbol from being announced. -->
+            <div class="solution-card">
               <div class="solution-icon" aria-hidden="true">
                 <span>&lt;/&gt;</span>
               </div>
@@ -148,10 +94,9 @@
                 Clear, responsive websites designed around your business goals
                 and customers.
               </p>
-            </article>
+            </div>
 
-            <!-- Card 2: Workflow automation service. -->
-            <article class="solution-card">
+            <div class="solution-card">
               <div class="solution-icon" aria-hidden="true">
                 <span>↻</span>
               </div>
@@ -161,10 +106,9 @@
                 Reduce repetitive tasks and give your team more time for
                 meaningful work.
               </p>
-            </article>
+            </div>
 
-            <!-- Card 3: Data-related services. -->
-            <article class="solution-card">
+            <div class="solution-card">
               <div class="solution-icon" aria-hidden="true">
                 <span>▥</span>
               </div>
@@ -174,10 +118,9 @@
                 Turn business information into clear insights that support
                 better decisions.
               </p>
-            </article>
+            </div>
 
-            <!-- Card 4: Technology consulting service. -->
-            <article class="solution-card">
+            <div class="solution-card">
               <div class="solution-icon" aria-hidden="true">
                 <span>◇</span>
               </div>
@@ -187,45 +130,35 @@
                 Find practical tools and digital approaches that fit your needs
                 and budget.
               </p>
-            </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- ==================== TESTIMONIAL SECTION ==================== -->
-      <!-- Displays a quotation to communicate the company's values. -->
       <section class="testimonial">
         <div class="container testimonial-inner">
-          <!-- blockquote identifies the quoted statement semantically. -->
           <blockquote>
             “Great technology should make work simpler, create new
             opportunities, and help people focus on what matters most.”
           </blockquote>
 
-          <!-- Identifies the stated source of the quotation. -->
           <p class="quote-author">— A NexaTech client</p>
         </div>
       </section>
 
-      <!-- ==================== CALL-TO-ACTION SECTION ==================== -->
-      <!-- Encourages visitors to contact the company after viewing the page. -->
       <section class="cta-section">
         <div class="container cta-banner">
-          <!-- Supporting text explains the purpose of the call to action. -->
           <div class="cta-copy">
             <h2>Ready to move your business forward?</h2>
 
             <p>Let's find the right digital solution for your next step.</p>
           </div>
 
-          <!-- Button-style link takes visitors to the Contact page. -->
           <a class="button button-outline" href="contact.html"> Contact Us </a>
         </div>
       </section>
     </main>
 
-    <!-- ==================== FOOTER ==================== -->
-    <!-- Displays the copyright information at the bottom of the page. -->
     <footer class="site-footer">
       <div class="container">
         <p>Copyright &copy; 2026 NexaTech</p>
